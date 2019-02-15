@@ -1,0 +1,16 @@
+.tasks {
+  padding: 1rem;
+  background: palegreen; 
+  grid-column: 5 / 14;
+  grid-row: 3 / 5;
+  align-self: start;
+  height: auto;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 5rem 1fr 4rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #ccc;
+  }
+}

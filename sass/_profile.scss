@@ -1,0 +1,21 @@
+.profile {
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+
+  &__header {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+  &__details__item {
+    display: flex;
+    
+    & > * {
+      margin-right: 1rem;
+    }
+  }
+}
