@@ -28,8 +28,7 @@ body {
   font-weight: 600;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  display: grid; }
   .navbar nav {
     grid-column: 2 / -1;
     margin-right: 5rem;
@@ -63,7 +62,7 @@ body {
     background: #39ac93; }
 
 .profile {
-  border: 2px solid #ebebf2;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   background: #fff;
   grid-column: 2 / 5;
@@ -163,10 +162,21 @@ body {
     background: currentColor; }
 
 .pending {
-  padding: 1rem;
-  background: yellowgreen;
+  padding: 1.6rem 3.2rem;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
   grid-column: 2 / 5;
-  grid-row: 4 / 5; }
+  grid-row: 4 / 5;
+  color: #58594f; }
+  .pending__header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem; }
+  .pending__task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 0; }
 
 .tasks {
   padding: 1rem;
@@ -184,7 +194,18 @@ body {
     border-bottom: 2px solid #ccc; }
 
 .stars {
-  padding: 1rem;
-  background: palevioletred;
+  padding: 2.5rem 3.2rem;
+  background: #fff;
   grid-column: 2 / 5;
-  margin-top: -10rem; }
+  grid-row: 5 / 6;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); }
+  .stars__info {
+    margin-left: 1rem;
+    font-size: 1.4rem; }
+  .stars__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rosybrown; }

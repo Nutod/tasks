@@ -1,6 +1,21 @@
 .pending {
-  padding: 1rem;
-  background: yellowgreen;
+  padding: 1.6rem 3.2rem;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
   grid-column: 2 / 5;
   grid-row: 4 / 5;
+  color: #58594f;
+
+  &__header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+  }
+
+  &__task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 0; 
+  }
 }
