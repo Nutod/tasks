@@ -1,22 +1,77 @@
 .profile {
-  padding: 1rem;
-  border: 2px solid #ccc;
+  border: 2px solid #ebebf2;
   border-radius: 3px;
   background: #fff;
   grid-column: 2 / 5;
   grid-row: 2 / 4;
   margin-top: 4.4rem;
+  padding: 3.2rem 2.4rem;
 
   &__header {
     display: flex;
     justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 3.5rem;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 2rem;
+
+    &__image {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      object-fit: contain;
+      background: #ebebf2;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    &__icon {
+      width: 1rem;
+      height: 1rem;
+      background: crimson;
+    }
   }
 
-  &__details__item {
+  &__details {
+    &__item {
+    padding-bottom: 1rem;
     display: flex;
+    align-items: center;
+    margin-bottom: 2.3rem;
+    color: #58594f;
     
-    & > * {
-      margin-right: 1rem;
+      & > * {
+        margin-right: 1.5rem;
+      }
+    }
+    &__icon {
+      width: 1rem;
+      height: 1rem;
+      background: crimson;
+    }
+  }
+
+  &__followers {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background: yellowgreen;
+
+      &:not(:first-child) {
+        margin-left: -0.5rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
     }
   }
 }

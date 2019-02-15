@@ -3,7 +3,7 @@
   grid-column: 5 / 14;
   align-self: start;
   height: 3.5rem;
-  margin-top: 4.4rem;
+  margin-top: 4.8rem;
   font-size: 1.3rem;
 
   display: flex;
@@ -44,6 +44,12 @@
   padding: 0 1rem;
   height: 3.2rem;
   border-radius: 2px;
+
+  &:hover {
+    color: #fff;
+    background: #6c63ff;
+    cursor: pointer;
+  }
 
   &__icon {
     width: 20px;
