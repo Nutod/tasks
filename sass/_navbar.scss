@@ -3,7 +3,7 @@
   grid-column: 1 / -1;
   height: 7rem;
   align-content: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
@@ -13,7 +13,7 @@
 
   nav {
     grid-column: 2 / -1;
-    margin-right: 20rem;
+    margin-right: 5rem;
     align-self: end;
     justify-self: end;
 
@@ -25,11 +25,31 @@
 
     li {
       margin-right: 1.5rem;
+      justify-content: center;
     }
 
     a {
       text-decoration: none;
       color: #555;
     }
+  }
+}
+
+.btn {
+  all: unset;
+  background: #50e3c2;
+  color: #ffffff;
+  padding: 2rem;
+  width: 8rem;
+  font-size: 1.5rem;
+  height: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 3px;
+
+  &:hover {
+    background: #39ac93;
   }
 }
