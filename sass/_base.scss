@@ -18,6 +18,7 @@ $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;   // 1000px
 $bp-medium: 50em;    // 800px;
 $bp-small: 37.5em;    // 600px;
+$bp-smallest: 18.75em; // 300px;
 
 *,
 *::before,
@@ -41,4 +42,19 @@ body {
     grid-template-columns: minmax(1.5rem, 1fr) repeat(12, 1fr) minmax(1.5rem, 1fr);
     grid-template-rows: 7rem 3.5rem 32rem 29.5rem 7.2rem;
     grid-gap: 1rem;
+
+    @media(max-width: $bp-large) {
+        background: crimson;
+        grid-template-columns: 0.2rem repeat(12, 1fr) 0.2rem;
+        grid-gap: 0.5rem;
+    }
+
+    @media(max-width: $bp-medium) {
+        background: yellowgreen;
+        grid-template-rows: 7rem 3.5rem max-content;
+    }
+
+    @media(max-width: $bp-small) {
+        background: pink;
+    }
 }

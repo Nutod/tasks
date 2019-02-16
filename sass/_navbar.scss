@@ -9,6 +9,10 @@
   background-color: #ffffff;
 
   display: grid;
+  
+  @media(max-width: $bp-medium) {
+    
+  }
 
   nav {
     grid-column: 2 / -1;
