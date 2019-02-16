@@ -137,7 +137,7 @@ body {
   background: #6c63ff;
   font-size: 1.4rem;
   width: 9.8rem;
-  height: 4.2rem;
+  height: 3.8rem;
   color: #fff;
   padding-left: 2rem;
   border-radius: 3px; }
@@ -176,22 +176,68 @@ body {
   .pending__task {
     display: flex;
     justify-content: space-between;
-    padding: 1.8rem 0; }
+    padding: 1.5rem 0;
+    align-items: center; }
+    .pending__task__date {
+      background: #f5f5f5;
+      color: #6c63ff;
+      padding: 0.5rem;
+      width: 5rem;
+      border: 1px solid #6c63ff;
+      border-radius: 1px;
+      display: flex;
+      justify-content: center; }
+      .pending__task__date:hover {
+        background: #6c63ff;
+        color: #fff;
+        cursor: pointer; }
 
 .tasks {
   padding: 1rem;
-  background: palegreen;
+  background: #fff;
   grid-column: 5 / 14;
   grid-row: 3 / 5;
   align-self: start;
-  height: auto;
-  margin-top: 4.4rem; }
+  margin-top: 4.8rem; }
   .tasks__item {
     display: grid;
     grid-template-columns: 5rem 1fr 4rem;
+    justify-content: center;
+    align-content: center;
     padding: 1rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #ccc; }
+    border-bottom: 1px solid #f5f5f5; }
+    .tasks__item-detail {
+      display: grid;
+      grid-template-columns: 6rem 1fr;
+      grid-gap: 1rem;
+      margin-right: 1rem; }
+      .tasks__item-detail-image {
+        height: 60px;
+        width: 60px;
+        background: brown; }
+      .tasks__item-detail-header {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-top: -0.7rem; }
+      .tasks__item-detail-content {
+        grid-column: 2 / -1;
+        margin-top: -4.4rem; }
+      .tasks__item-detail-completed {
+        grid-column: 2 / -1;
+        margin-top: -1rem;
+        font-size: 1rem;
+        color: #9b9b9b; }
+    .tasks__item-checkbox {
+      border: 1px solid #999;
+      background: crimson;
+      align-self: start;
+      padding: 2rem 0; }
+    .tasks__item-delete {
+      align-self: center;
+      width: 20px;
+      height: 20px;
+      background: palevioletred; }
 
 .stars {
   padding: 2.5rem 3.2rem;
