@@ -20,27 +20,28 @@ body {
   grid-gap: 1rem; }
   @media (max-width: 62.5em) {
     body {
-      background: crimson;
       grid-template-columns: 0.2rem repeat(12, 1fr) 0.2rem;
       grid-gap: 0.5rem; } }
   @media (max-width: 50em) {
     body {
-      background: yellowgreen;
       grid-template-rows: 7rem 3.5rem max-content; } }
   @media (max-width: 37.5em) {
     body {
-      background: pink; } }
+      grid-template-rows: 8rem 3.5rem repeat(4, max-content); } }
 
 .navbar {
   padding: 1rem;
   grid-column: 1 / -1;
   height: 7rem;
-  align-content: center;
+  justify-content: end;
   font-size: 1.5rem;
   font-weight: 600;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   display: grid; }
+  @media (max-width: 37.5em) {
+    .navbar {
+      height: 8rem; } }
   .navbar nav {
     grid-column: 2 / -1;
     margin-right: 5rem;
@@ -50,6 +51,10 @@ body {
       list-style: none;
       display: flex;
       align-items: center; }
+      @media (max-width: 37.5em) {
+        .navbar nav ul {
+          flex-wrap: wrap;
+          justify-content: center; } }
     .navbar nav li {
       margin-right: 1.5rem;
       justify-content: center; }
@@ -86,6 +91,9 @@ body {
       grid-row: 5 / 6;
       grid-column: 3 / 8;
       margin-top: 0; } }
+  @media (max-width: 37.5em) {
+    .profile {
+      grid-column: 5 / 11; } }
   .profile__header {
     display: flex;
     justify-content: space-between;
@@ -194,6 +202,10 @@ body {
       padding: 3rem 2rem;
       grid-row: 5 / 6;
       grid-column: 8 / 13; } }
+  @media (max-width: 37.5em) {
+    .pending {
+      grid-row: 6 / 7;
+      grid-column: 5 / 11; } }
   .pending__header {
     font-size: 1.4rem;
     font-weight: 600;
@@ -251,6 +263,9 @@ body {
       .tasks__item-detail-content {
         grid-column: 2 / -1;
         margin-top: -4.4rem; }
+        @media (max-width: 37.5em) {
+          .tasks__item-detail-content {
+            margin-top: -2rem; } }
       .tasks__item-detail-completed {
         grid-column: 2 / -1;
         margin-top: -1rem;
@@ -281,6 +296,10 @@ body {
       padding: 3rem 2rem;
       grid-row: 6 / 7;
       grid-column: 3 / 6; } }
+  @media (max-width: 37.5em) {
+    .stars {
+      grid-row: 7 / 8;
+      grid-column: 5 / 11; } }
   .stars__info {
     margin-left: 1rem;
     font-size: 1.4rem; }

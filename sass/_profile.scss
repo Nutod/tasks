@@ -13,6 +13,10 @@
     margin-top: 0;
   }
 
+  @media(max-width: $bp-small) {
+    grid-column: 5 / 11;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between; 
